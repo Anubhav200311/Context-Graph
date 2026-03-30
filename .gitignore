@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+backend/.env
+
+# Database (generated at runtime from dataset)
+*.db
+*.db-shm
+*.db-wal
+
+# Build output
+frontend/dist/
+
+# Dataset (too large for git, see README for download instructions)
+sap-o2c-data/
+dataset.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
