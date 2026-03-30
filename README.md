@@ -9,7 +9,7 @@ A graph-based data modeling and natural language query system for SAP Order-to-C
 
 ---
 
-![App Screenshot](Image.png)
+![App Screenshot](Image_preview.png)
 
 ---
 
