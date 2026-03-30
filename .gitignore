@@ -13,8 +13,7 @@ __pycache__/
 .env
 backend/.env
 
-# Database (generated at runtime from dataset)
-*.db
+# Database temp files
 *.db-shm
 *.db-wal
 

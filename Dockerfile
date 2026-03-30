@@ -17,14 +17,12 @@ COPY frontend/ /app/frontend/
 WORKDIR /app/frontend
 RUN npm install && npm run build
 
-# Copy backend and dataset
+# Copy backend (includes pre-built sap_o2c.db)
 WORKDIR /app
 COPY backend/ /app/backend/
-COPY sap-o2c-data/ /app/sap-o2c-data/
 
 # Serve frontend static files from FastAPI
-ENV DATA_DIR=/app/sap-o2c-data
-ENV DB_PATH=/app/sap_o2c.db
+ENV DB_PATH=/app/backend/sap_o2c.db
 ENV STATIC_DIR=/app/frontend/dist
 
 WORKDIR /app/backend
